@@ -1,0 +1,20 @@
+<!--App1/templates/form.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario POST</title>
+</head>
+<body>
+    <form action="/app1/solicitudes/" method="post">
+        {% csrf_token %} 
+        <p>Nombre:</p>
+        <input type='text' name='nombre'>
+        <p>Posición cargo:</p>
+        <input type='number' min=1 max=10 name='pos_cargo'>
+        <button type='submit'>Nuevo usuario</button>
+    </form>
+</body>
+</html>

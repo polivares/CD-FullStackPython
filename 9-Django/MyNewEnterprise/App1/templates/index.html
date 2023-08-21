@@ -1,0 +1,23 @@
+<!--App1/templates/index.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido a App1</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+  </head>
+  <body>
+    <h1>Bienvenido a App1: Una aplicación de My Enterprise</h1>
+    <p>Nombre: {{nombre}}</p>
+    <p>Posición del cargo {{pos_cargo}}</p>
+    <p>Amigos</p>
+    <ul>
+    {% for amigo in amigos %}
+        <li>{{amigo}}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
