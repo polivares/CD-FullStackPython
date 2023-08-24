@@ -225,7 +225,7 @@ print(factorial_con_recursion(3))
 # de un número solicitado. Para esto, el programa deberá realizar 
 # las siguientes tareas:
 # Solicitar al usuario un número entero positivo perteneciente al rango [2,1000].
-#(Para solicitar datos, buscar la función input() de python) 
+# (Para solicitar datos, buscar la función input() de python) 
 # Su programa debe verificar esta condición. En caso contrario, se debe pedir 
 # otro número hasta que se cumpla la condición.
 # Indicar las siguientes caracterı́sticas del número solicitado:
