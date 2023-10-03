@@ -50,6 +50,8 @@ class Usuario:
     # Método estático para validación de datos de formulario
     @staticmethod
     def validate_usuario(usuario):
+        # Se recibe toda la información del usuario en formato diccionario
+        
         is_valid = True # Flag marcado como True inicialmente. Se cambia dependiendo de la validación
         if len(usuario['first_name']) < 3:
             flash("First name must be at least 3 characters.")
@@ -63,8 +65,8 @@ class Usuario:
         if not EMAIL_REGEX.match(usuario['email']): 
             flash("Invalid email address!")
             is_valid = False
-        if len(usuario['password']) < 3:
-            flash("Password must be at least 3 characters.")
+        if len(usuario['password']) < 8:
+            flash("Password must be at least 8 characters.")
             is_valid = False
         
         # Si en este punto is_valid sigue siendo True,
@@ -73,7 +75,5 @@ class Usuario:
         # Si es false, alguna validación fallo
         return is_valid 
     
-    
-    
-    
+
 
