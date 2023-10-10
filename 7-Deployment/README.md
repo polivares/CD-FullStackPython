@@ -13,3 +13,6 @@
     ```console
         sudo usermod -aG www-data ubuntu
     ```
+
+Si le aparece un error `502 bad gateway`, siga las instrucciones de esta página: https://stackoverflow.com/questions/70111791/nginx-13-permission-denied-while-connecting-to-upstream
+Recuerda reiniciar ngnix con el comando `sudo service nginx restart`
